@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        
+        <title>QuizApp</title>
+    </head>
+    <body>
+        <section>
+                <div class="mainwrapper">
+
+                <div class="blue-bar">
+                    <div class="name">
+                    <h3 id="quiz-name"></h3> <br>
+                    <span id="welcome"></span>
+                    </div>
+                    <div class="finish"><img id="stop" src="./img/stop.png"></div>
+                    <div class="left-time"><img id="img" src="./img/clock.png"></div>
+                    <div id="timer"><span id="minutes"></span>:<span id="seconds"></span></div>
+                </div>
+
+                <div class="internalwrapper" id="internalwrapper">
+                    <h1 id="question-no">Question Number: </h2>
+                    <h2 id="question">Question?</h2>
+                    <div class="choice-container">
+                    <p class="choice-prefix">A</p>
+                    <p class="choice-text" data-number="0"></p>
+                    </div>
+                    <div class="choice-container">
+                    <p class="choice-prefix">B</p>
+                    <p class="choice-text" data-number="1"></p>
+                    </div>
+                    <div class="choice-container">
+                    <p class="choice-prefix">C</p>
+                    <p class="choice-text" data-number="2"></p>
+                    </div>
+                    <div class="choice-container">
+                    <p class="choice-prefix">D</p>
+                    <p class="choice-text" data-number="3"></p>
+                    </div>
+                </div>
+                    
+                <div class="navigationwrapper">
+                        <div class="back">
+                            <div class="back-button">
+                                <p class="nav-text-back">Back</p>
+                                <img src="./img/back.png" alt="back">
+                            </div>
+                        </div>
+
+                        <div class="next">
+                            <div class="next-button">
+                                <p class="nav-text-next">Next</p>
+                                <img src="./img/next.png" alt="next">
+                            </div>
+                        </div>
+
+                        <div id="start">
+                            start
+                        </div>
+                </div>   
+
+                <div class="scorewrapper" id="scorewrapper">
+                    
+                    <div id="score">
+                        <div class="score-text"> Test</div>
+                    </div>
+
+            </div>   
+
+
+                
+            </div>
+        </section>
+        <script type="module" src="./js/main.js"></script>
+    </body>
+</html>

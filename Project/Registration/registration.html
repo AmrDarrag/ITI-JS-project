@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Page Title</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./../styles/styles.css" />
+	</head>
+	<body>
+		<div id="mainDiv" class="container">
+			<h1 id="regstration">Registration</h1>
+			<form id="form">
+				<label for="username"
+					>Username : <input type="text" name="username" id="username" placeholder="username"
+				/></label>
+				<p style="color: red; display: none" id="username-error">&#9888; User Name is Incorrect</p>
+				<label for="password"
+					>Password : <input type="password" name="password" id="password" placeholder="password"
+				/></label>
+				<p style="color: red; display: none" id="password-error">&#9888; Password is Invalid <small>(it must contain at least 8 letters and numbers) </small> </p>
+				<label for="confirmpassword"
+					>Password Confirmation:
+					<input type="password" name="confirmpassword" id="confirmpassword" placeholder="confirmpassword"
+				/></label>
+				<p style="color: red; display: none" id="confirmpassword-error">&#9888; Passord Must Match</p>
+				<label for="email">Email : <input type="text" name="email" id="email" placeholder="email" /></label>
+				<p style="color: red; display: none" id="email-error">&#9888; Email is Invalid</p>
+				<div class="gender">
+					<p id="gender">Gender:</p>
+					<div class="gender-container">
+						<label class="genderLabel" for="gender">
+							<input type="radio" name="gender" id="maleradio" value="male" />Male
+						</label>
+						<label class="genderLabel" for="gender"
+							><input type="radio" name="gender" id="femaleradio" value="female" /> Female
+						</label>
+					</div>
+				</div>
+				<div class="btn-container">
+					<button type="button" id="okbtn">ok</button>
+					<button type="button" id="cancelbtn">cancel</button>
+				</div>
+			</form>
+		</div>
+		<script src="./regestration.js"></script>
+	</body>
+</html>
